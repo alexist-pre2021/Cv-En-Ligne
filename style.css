@@ -1,0 +1,129 @@
+/*HEADER*/
+/*UL*/
+ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+ul li{
+    list-style: none;
+    color: #484848;
+    font-family: arial;
+    font-size: 90px;
+    letter-spacing: 15px;
+    animation: flash 1.4s linear infinite ;
+}
+@keyframes flash{
+    0%{
+        color: #484848;
+        text-shadow: none;    
+    }
+    90%{
+        color: #484848;
+        text-shadow: none;    
+    }
+    100%{
+        color: #bdbdbd;
+        text-shadow:0 0 7px #fff900, 0 0 50px "ff6c00";
+    }
+}
+ul li:nth-child(1){
+    animation-delay: .1s;
+}
+ul li:nth-child(2){
+    animation-delay: .2s;
+}
+ul li:nth-child(3){
+    animation-delay: .3s;
+}
+ul li:nth-child(4){
+    animation-delay: .3s;
+}
+ul li:nth-child(5){
+    animation-delay: .4s;
+}
+ul li:nth-child(6){
+    animation-delay: .5s;
+}
+ul li:nth-child(7){
+    animation-delay: .6s;
+}
+ul li:nth-child(8){
+    animation-delay: .7s;
+}
+ul li:nth-child(9){
+    animation-delay: .8s;
+}
+ul li:nth-child(10){
+    animation-delay: .9s;
+}
+ul li:nth-child(11){
+    animation-delay: 1s;
+}
+ul li:nth-child(12){
+    animation-delay: 1.1s;
+}
+ul li:nth-child(13){
+    animation-delay: 1.2s;
+}
+ul li:nth-child(14){
+    animation-delay: 1.3s;
+}
+hr{
+    font-weight: 15px;
+}
+.fond1{
+    background-image: url(./image/galaxy-night-landscape.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+/*2EME FOND*/
+.container{
+    background-color: black;
+    
+}
+.fond2{
+    background-color: rgb(39, 37, 37);
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+/*Barres de compétences*/
+.skill{
+    text-align: center;
+}
+#competences{
+    margin-top: 45px;
+}
+.progress{
+    margin-bottom: 45px;
+    text-shadow: 1px 1px 1px;
+}
+.text{
+    color: white;
+}
+/*AVATAR*/
+.img{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+}
+/*Centre d'intêret*/
+.hobbie{
+    direction: ltr;
+    margin-top: 70px;
+    color: white;
+}
+.card{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
