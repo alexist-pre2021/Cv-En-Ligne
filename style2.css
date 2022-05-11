@@ -59,7 +59,7 @@ ul li:nth-child(8){
 ul li:nth-child(9){
     animation-delay: .8s;
 }
-ul li:nth-child(10){
+ul li:nth-child(10){ 
     animation-delay: .9s;
 }
 ul li:nth-child(11){
@@ -135,7 +135,8 @@ body{
     background: #0a2a42;
     min-height: 1500px;
 }
-section{
+/* style pour la section 1 */
+#section-fond{
     position: relative;
     width: 100%;
     height: 100vh;
@@ -144,16 +145,16 @@ section{
     justify-content: center;
     align-items: center;
 }
-section::before{
+#section-fond::before{
     content: '';
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 100px;
     background: linear-gradient(to top, #0a2a43, transparent);
-    z-index: 10000;
+    z-index: 3;
 }
-section::after{
+#section-fond::after{
     content: '';
     position: absolute;
     top: 0;
@@ -161,10 +162,10 @@ section::after{
     width: 100%;
     height: 100%;
     background:  #0a2a43;
-    z-index: 10000;
+    z-index: 3;
     mix-blend-mode: color;
 }
-section img{
+#section-fond img{
     position: absolute;
     top: 0;
     left: 0;
@@ -183,3 +184,13 @@ section img{
 #road{
     z-index: 2;
 }
+/* section 2 : le carousel */
+/* + le z index est élévé + il est au dessus des autres élémentes (+ proche de toi en terme de profondeur)
+ - comme les calques sur photoshop - pour le moment, 4 est la valeur la plus élevée */
+#section-carousel{
+    z-index:4;
+    color: white;
+}
+
+/* test card */
+/* https://getbootstrap.com/docs/5.0/components/card/ */
